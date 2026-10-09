@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio của tôi</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: #36345c;
+  font-family: Arial, sans-serif;
+  background-color: #fffaf2;
+  background-image:
+    linear-gradient(#e9ddcf 1px, transparent 1px),
+    linear-gradient(90deg, #e9ddcf 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  padding: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.portrait {
+  width: min(38%, 340px);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 180px 180px 20px 20px;
+}
+
+.intro { max-width: 520px; }
+
+h1 {
+  font-size: clamp(36px, 6vw, 68px);
+  margin: 10px 0;
+}
+
+p { line-height: 1.8; }
+
+.tag {
+  display: inline-block;
+  border: 1px solid #aaa0c8;
+  border-radius: 30px;
+  padding: 8px 16px;
+}
+
+@media (max-width: 650px) {
+  main { flex-direction: column; padding: 32px 20px; }
+  .portrait { width: min(75%, 280px); }
+  .intro { text-align: center; }
+}
+</style>
+</head>
+<body>
+<main>
+  <img class="portrait"
+       src="images/chan-dung.jpg"
+       alt="Ảnh chân dung của tôi">
+
+  <section class="intro">
+    <span class="tag">PORTFOLIO SINH VIÊN</span>
+    <h1>Xin chào!<br>Tớ là Như.</h1>
+    <p>
+      Sinh viên ngành Truyền thông đa phương tiện.
+      Tớ yêu thích thiết kế, sáng tạo nội dung
+      và khám phá những ý tưởng mới.
+    </p>
+    <p><b>Kỹ năng:</b> Canva · Thiết kế · Truyền thông</p>
+    <p><b>Mục tiêu:</b> Học hỏi và phát triển mỗi ngày.</p>
+  </section>
+</main>
+</body>
+</html>
